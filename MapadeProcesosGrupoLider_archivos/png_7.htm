@@ -1,0 +1,199 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+MapadeProcesosGrupoLider
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 48;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.403842;
+	viewMgr.visBBoxRight = 11.316824;
+	viewMgr.visBBoxBottom = 4.397288;
+	viewMgr.visBBoxTop = 7.981442;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="http://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_7.png" ALT="2.Construcción" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Gestión PreOperativa" origTitle="Gestión PreOperativa" TITLE="Gestión PreOperativa" HREF="" target="_top" COORDS="128,105,317,105,339,83,317,61,128,61,151,83,128,105" onmouseover="UpdateTooltip(this,48,390,event)" onfocus="UpdateTooltip(this,48,390,event)" onclick="return OnShapeClick(48,390,event);" onkeyup="OnShapeKey(48,390,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/prevencion-de-riesgos-de-trabajos-en-obra" target="_top" COORDS="692,289,690,289,690,288,690,287,689,287,685,287,684,286,683,286,682,285,679,285,678,285,678,286,678,295,678,295,678,296,678,296,689,296,690,295,692,290,692,289,692,289" onmouseover="UpdateTooltip(this,48,386,event)" onfocus="UpdateTooltip(this,48,386,event)" onclick="return OnShapeClick(48,386,event);" onkeyup="OnShapeKey(48,386,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/prevencion-de-riesgos-de-trabajos-en-obra" target="_top" COORDS="679,286,682,286,683,286,683,287,684,287,685,288,689,288,689,289,681,289,680,290,679,293,679,286,679,286,679,286" onmouseover="UpdateTooltip(this,48,386,event)" onfocus="UpdateTooltip(this,48,386,event)" onclick="return OnShapeClick(48,386,event);" onkeyup="OnShapeKey(48,386,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/prevencion-de-riesgos-de-trabajos-en-obra" target="_top" COORDS="689,295,689,295,679,295,681,290,681,290,691,290,689,295" onmouseover="UpdateTooltip(this,48,386,event)" onfocus="UpdateTooltip(this,48,386,event)" onclick="return OnShapeClick(48,386,event);" onkeyup="OnShapeKey(48,386,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-calidad-de-obra" target="_top" COORDS="692,242,690,242,690,241,690,240,689,240,685,240,684,239,683,239,682,238,679,238,678,239,678,239,678,249,678,249,678,249,678,249,689,249,690,248,692,243,692,242,692,242" onmouseover="UpdateTooltip(this,48,385,event)" onfocus="UpdateTooltip(this,48,385,event)" onclick="return OnShapeClick(48,385,event);" onkeyup="OnShapeKey(48,385,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-calidad-de-obra" target="_top" COORDS="679,239,682,239,683,240,683,240,684,241,685,241,689,241,689,242,681,242,680,243,679,247,679,239,679,239,679,239" onmouseover="UpdateTooltip(this,48,385,event)" onfocus="UpdateTooltip(this,48,385,event)" onclick="return OnShapeClick(48,385,event);" onkeyup="OnShapeKey(48,385,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-calidad-de-obra" target="_top" COORDS="689,248,689,248,679,248,681,243,681,243,691,243,689,248" onmouseover="UpdateTooltip(this,48,385,event)" onfocus="UpdateTooltip(this,48,385,event)" onclick="return OnShapeClick(48,385,event);" onkeyup="OnShapeKey(48,385,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-obra" target="_top" COORDS="502,193,500,193,500,192,499,191,499,191,495,191,493,190,493,190,492,189,488,189,488,189,487,190,487,200,487,200,488,200,488,200,498,200,500,199,502,194,502,193,502,193" onmouseover="UpdateTooltip(this,48,384,event)" onfocus="UpdateTooltip(this,48,384,event)" onclick="return OnShapeClick(48,384,event);" onkeyup="OnShapeKey(48,384,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-obra" target="_top" COORDS="488,190,492,190,492,191,493,191,494,192,495,192,499,192,499,193,491,193,490,194,488,198,488,190,488,190,488,190" onmouseover="UpdateTooltip(this,48,384,event)" onfocus="UpdateTooltip(this,48,384,event)" onclick="return OnShapeClick(48,384,event);" onkeyup="OnShapeKey(48,384,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-obra" target="_top" COORDS="499,199,498,199,488,199,491,194,491,194,501,194,499,199" onmouseover="UpdateTooltip(this,48,384,event)" onfocus="UpdateTooltip(this,48,384,event)" onclick="return OnShapeClick(48,384,event);" onkeyup="OnShapeKey(48,384,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-produccion" target="_top" COORDS="692,146,690,146,690,145,690,145,689,144,685,144,684,144,683,143,682,143,679,143,678,143,678,143,678,153,678,153,678,154,678,154,689,154,690,153,692,147,692,147,692,146" onmouseover="UpdateTooltip(this,48,382,event)" onfocus="UpdateTooltip(this,48,382,event)" onclick="return OnShapeClick(48,382,event);" onkeyup="OnShapeKey(48,382,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-produccion" target="_top" COORDS="679,143,682,143,683,144,683,144,684,145,685,145,689,145,689,146,681,146,680,147,679,151,679,143,679,143,679,143" onmouseover="UpdateTooltip(this,48,382,event)" onfocus="UpdateTooltip(this,48,382,event)" onclick="return OnShapeClick(48,382,event);" onkeyup="OnShapeKey(48,382,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-produccion" target="_top" COORDS="689,152,689,153,679,153,681,147,681,147,691,147,689,152" onmouseover="UpdateTooltip(this,48,382,event)" onfocus="UpdateTooltip(this,48,382,event)" onclick="return OnShapeClick(48,382,event);" onkeyup="OnShapeKey(48,382,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Control de Producción" origTitle="Control de Producción" TITLE="Control de Producción" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-produccion" target="_top" COORDS="512,156,696,156,696,111,512,111,512,156" onmouseover="UpdateTooltip(this,48,381,event)" onfocus="UpdateTooltip(this,48,381,event)" onclick="return OnShapeClick(48,381,event);" onkeyup="OnShapeKey(48,381,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración de Obra" origTitle="Administración de Obra" TITLE="Administración de Obra" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-obra" target="_top" COORDS="322,204,507,204,507,160,322,160,322,204" onmouseover="UpdateTooltip(this,48,379,event)" onfocus="UpdateTooltip(this,48,379,event)" onclick="return OnShapeClick(48,379,event);" onkeyup="OnShapeKey(48,379,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Prevención de Riesgos de trabajos en Obra" origTitle="Prevención de Riesgos de trabajos en Obra" TITLE="Prevención de Riesgos de trabajos en Obra" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/prevencion-de-riesgos-de-trabajos-en-obra" target="_top" COORDS="512,300,696,300,696,256,512,256,512,300" onmouseover="UpdateTooltip(this,48,377,event)" onfocus="UpdateTooltip(this,48,377,event)" onclick="return OnShapeClick(48,377,event);" onkeyup="OnShapeKey(48,377,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Control de Calidad de Obra" origTitle="Control de Calidad de Obra" TITLE="Control de Calidad de Obra" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-calidad-de-obra" target="_top" COORDS="512,252,696,252,696,207,512,207,512,252" onmouseover="UpdateTooltip(this,48,378,event)" onfocus="UpdateTooltip(this,48,378,event)" onclick="return OnShapeClick(48,378,event);" onkeyup="OnShapeKey(48,378,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/elaboracion-de-dossier-tecnico-de-arranque-de-obra" target="_top" COORDS="311,146,309,146,309,145,309,144,308,144,304,144,303,143,303,143,301,142,298,142,297,142,297,143,297,152,297,152,297,153,298,153,308,153,309,152,312,147,312,146,311,146" onmouseover="UpdateTooltip(this,48,369,event)" onfocus="UpdateTooltip(this,48,369,event)" onclick="return OnShapeClick(48,369,event);" onkeyup="OnShapeKey(48,369,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/elaboracion-de-dossier-tecnico-de-arranque-de-obra" target="_top" COORDS="298,143,301,143,302,143,302,144,303,144,304,145,308,145,308,146,301,146,300,147,298,150,298,143,298,143,298,143" onmouseover="UpdateTooltip(this,48,369,event)" onfocus="UpdateTooltip(this,48,369,event)" onclick="return OnShapeClick(48,369,event);" onkeyup="OnShapeKey(48,369,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/elaboracion-de-dossier-tecnico-de-arranque-de-obra" target="_top" COORDS="308,152,308,152,298,152,301,147,301,147,311,147,308,152" onmouseover="UpdateTooltip(this,48,369,event)" onfocus="UpdateTooltip(this,48,369,event)" onclick="return OnShapeClick(48,369,event);" onkeyup="OnShapeKey(48,369,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="png_1.htm" target="frmDrawing" COORDS="988,301,1003,316,1003,309,1019,309,1019,294,1003,294,1003,287,988,301" onmouseover="UpdateTooltip(this,48,359,event)" onfocus="UpdateTooltip(this,48,359,event)" onclick="return OnShapeClick(48,359,event);" onkeyup="OnShapeKey(48,359,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Entrega y Cierre de Obra" origTitle="Entrega y Cierre de Obra" TITLE="Entrega y Cierre de Obra" HREF="" target="_top" COORDS="701,105,890,105,912,83,890,61,701,61,723,83,701,105" onmouseover="UpdateTooltip(this,48,357,event)" onfocus="UpdateTooltip(this,48,357,event)" onclick="return OnShapeClick(48,357,event);" onkeyup="OnShapeKey(48,357,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Ejecución y Control" origTitle="Ejecución y Control" TITLE="Ejecución y Control" HREF="" target="_top" COORDS="323,105,696,105,718,83,696,61,323,61,345,83,323,105" onmouseover="UpdateTooltip(this,48,355,event)" onfocus="UpdateTooltip(this,48,355,event)" onclick="return OnShapeClick(48,355,event);" onkeyup="OnShapeKey(48,355,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/planeamiento-operativo-de-obra" target="_top" COORDS="311,193,309,193,309,192,309,191,308,191,304,191,303,190,303,190,301,189,298,189,297,189,297,190,297,200,297,200,297,200,298,200,308,200,309,199,312,194,312,193,311,193" onmouseover="UpdateTooltip(this,48,346,event)" onfocus="UpdateTooltip(this,48,346,event)" onclick="return OnShapeClick(48,346,event);" onkeyup="OnShapeKey(48,346,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/planeamiento-operativo-de-obra" target="_top" COORDS="298,190,301,190,302,191,302,191,303,192,304,192,308,192,308,193,301,193,300,194,298,198,298,190,298,190,298,190" onmouseover="UpdateTooltip(this,48,346,event)" onfocus="UpdateTooltip(this,48,346,event)" onclick="return OnShapeClick(48,346,event);" onkeyup="OnShapeKey(48,346,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/planeamiento-operativo-de-obra" target="_top" COORDS="308,199,308,199,298,199,301,194,301,194,311,194,308,199" onmouseover="UpdateTooltip(this,48,346,event)" onfocus="UpdateTooltip(this,48,346,event)" onclick="return OnShapeClick(48,346,event);" onkeyup="OnShapeKey(48,346,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Planeamiento Operativo  de Obra" origTitle="Planeamiento Operativo  de Obra" TITLE="Planeamiento Operativo  de Obra" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/planeamiento-operativo-de-obra" target="_top" COORDS="132,204,316,204,316,160,132,160,132,204" onmouseover="UpdateTooltip(this,48,337,event)" onfocus="UpdateTooltip(this,48,337,event)" onclick="return OnShapeClick(48,337,event);" onkeyup="OnShapeKey(48,337,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Elaboración de Dossier Técnico de Arranque de Obra" origTitle="Elaboración de Dossier Técnico de Arranque de Obra" TITLE="Elaboración de Dossier Técnico de Arranque de Obra" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/elaboracion-de-dossier-tecnico-de-arranque-de-obra" target="_top" COORDS="131,156,316,156,316,111,131,111,131,156" onmouseover="UpdateTooltip(this,48,335,event)" onfocus="UpdateTooltip(this,48,335,event)" onclick="return OnShapeClick(48,335,event);" onkeyup="OnShapeKey(48,335,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/cierre-de-obra" target="_top" COORDS="888,196,886,196,886,195,886,194,885,194,881,194,880,193,880,193,878,192,875,192,874,192,874,193,874,203,874,203,874,203,875,203,885,203,886,202,889,197,889,196,888,196" onmouseover="UpdateTooltip(this,48,333,event)" onfocus="UpdateTooltip(this,48,333,event)" onclick="return OnShapeClick(48,333,event);" onkeyup="OnShapeKey(48,333,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/cierre-de-obra" target="_top" COORDS="875,193,878,193,879,193,879,194,880,195,881,195,885,195,885,196,878,196,877,197,875,200,875,193,875,193,875,193" onmouseover="UpdateTooltip(this,48,333,event)" onfocus="UpdateTooltip(this,48,333,event)" onclick="return OnShapeClick(48,333,event);" onkeyup="OnShapeKey(48,333,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/cierre-de-obra" target="_top" COORDS="885,202,885,202,875,202,878,197,878,197,888,197,885,202" onmouseover="UpdateTooltip(this,48,333,event)" onfocus="UpdateTooltip(this,48,333,event)" onclick="return OnShapeClick(48,333,event);" onkeyup="OnShapeKey(48,333,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/entrega-de-ui-y-areas-comunes-de-obra-a-sac" target="_top" COORDS="888,145,886,145,886,144,886,143,885,143,881,143,880,142,880,142,878,141,875,141,874,142,874,142,874,152,874,152,874,152,875,152,885,152,886,152,889,146,889,145,888,145" onmouseover="UpdateTooltip(this,48,332,event)" onfocus="UpdateTooltip(this,48,332,event)" onclick="return OnShapeClick(48,332,event);" onkeyup="OnShapeKey(48,332,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/entrega-de-ui-y-areas-comunes-de-obra-a-sac" target="_top" COORDS="875,142,878,142,879,143,879,143,880,144,881,144,885,144,885,145,878,145,877,146,875,150,875,142,875,142,875,142" onmouseover="UpdateTooltip(this,48,332,event)" onfocus="UpdateTooltip(this,48,332,event)" onclick="return OnShapeClick(48,332,event);" onkeyup="OnShapeKey(48,332,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/entrega-de-ui-y-areas-comunes-de-obra-a-sac" target="_top" COORDS="885,151,885,152,875,152,878,146,878,146,888,146,885,151" onmouseover="UpdateTooltip(this,48,332,event)" onfocus="UpdateTooltip(this,48,332,event)" onclick="return OnShapeClick(48,332,event);" onkeyup="OnShapeKey(48,332,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/ejecucion-de-la-obra" target="_top" COORDS="502,145,500,145,500,144,499,143,499,143,495,143,493,142,493,142,492,141,488,141,488,141,487,142,487,152,487,152,488,152,488,152,498,152,500,151,502,146,502,145,502,145" onmouseover="UpdateTooltip(this,48,331,event)" onfocus="UpdateTooltip(this,48,331,event)" onclick="return OnShapeClick(48,331,event);" onkeyup="OnShapeKey(48,331,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/ejecucion-de-la-obra" target="_top" COORDS="488,142,492,142,492,142,493,143,494,144,495,144,499,144,499,145,491,145,490,146,488,149,488,142,488,142,488,142" onmouseover="UpdateTooltip(this,48,331,event)" onfocus="UpdateTooltip(this,48,331,event)" onclick="return OnShapeClick(48,331,event);" onkeyup="OnShapeKey(48,331,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/ejecucion-de-la-obra" target="_top" COORDS="499,151,498,151,488,151,491,146,491,146,501,146,499,151" onmouseover="UpdateTooltip(this,48,331,event)" onfocus="UpdateTooltip(this,48,331,event)" onclick="return OnShapeClick(48,331,event);" onkeyup="OnShapeKey(48,331,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Entrega de UI y Áreas Comunes de Obra a SAC" origTitle="Entrega de UI y Áreas Comunes de Obra a SAC" TITLE="Entrega de UI y Áreas Comunes de Obra a SAC" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/entrega-de-ui-y-areas-comunes-de-obra-a-sac" target="_top" COORDS="709,156,893,156,893,111,709,111,709,156" onmouseover="UpdateTooltip(this,48,388,event)" onfocus="UpdateTooltip(this,48,388,event)" onclick="return OnShapeClick(48,388,event);" onkeyup="OnShapeKey(48,388,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Cierre de Obra" origTitle="Cierre de Obra" TITLE="Cierre de Obra" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/cierre-de-obra" target="_top" COORDS="709,204,893,204,893,160,709,160,709,204" onmouseover="UpdateTooltip(this,48,389,event)" onfocus="UpdateTooltip(this,48,389,event)" onclick="return OnShapeClick(48,389,event);" onkeyup="OnShapeKey(48,389,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Ejecución de la Obra" origTitle="Ejecución de la Obra" TITLE="Ejecución de la Obra" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/ejecucion-de-la-obra" target="_top" COORDS="324,156,508,156,508,111,324,111,324,156" onmouseover="UpdateTooltip(this,48,387,event)" onfocus="UpdateTooltip(this,48,387,event)" onclick="return OnShapeClick(48,387,event);" onkeyup="OnShapeKey(48,387,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+MapadeProcesosGrupoLider
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 41;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.388383;
+	viewMgr.visBBoxRight = 11.371669;
+	viewMgr.visBBoxBottom = 2.116709;
+	viewMgr.visBBoxTop = 7.893368;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="http://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_9.png" ALT="3.Gestión de Talento Humano" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Gestión del Descanso Médico" origTitle="Gestión del Descanso Médico" TITLE="Gestión del Descanso Médico" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/gestion-de-descanso-medico" target="_top" COORDS="397,236,581,236,581,181,397,181,397,236" onmouseover="UpdateTooltip(this,41,203,event)" onfocus="UpdateTooltip(this,41,203,event)" onclick="return OnShapeClick(41,203,event);" onkeyup="OnShapeKey(41,203,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Desarrollo del Clima Laboral" origTitle="Desarrollo del Clima Laboral" TITLE="Desarrollo del Clima Laboral" HREF="png_9.htm" target="frmDrawing" COORDS="14,360,198,360,198,305,14,305,14,360" onmouseover="UpdateTooltip(this,41,198,event)" onfocus="UpdateTooltip(this,41,198,event)" onclick="return OnShapeClick(41,198,event);" onkeyup="OnShapeKey(41,198,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Gestión de Cultura Organizacional" origTitle="Gestión de Cultura Organizacional" TITLE="Gestión de Cultura Organizacional" HREF="png_9.htm" target="frmDrawing" COORDS="15,298,199,298,199,243,15,243,15,298" onmouseover="UpdateTooltip(this,41,197,event)" onfocus="UpdateTooltip(this,41,197,event)" onclick="return OnShapeClick(41,197,event);" onkeyup="OnShapeKey(41,197,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración de Estructura de puestos" origTitle="Administración de Estructura de puestos" TITLE="Administración de Estructura de puestos" HREF="png_9.htm" target="frmDrawing" COORDS="16,236,200,236,200,181,16,181,16,236" onmouseover="UpdateTooltip(this,41,196,event)" onfocus="UpdateTooltip(this,41,196,event)" onclick="return OnShapeClick(41,196,event);" onkeyup="OnShapeKey(41,196,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="png_1.htm" target="frmDrawing" COORDS="988,493,1003,508,1003,500,1019,500,1019,486,1003,486,1003,478,988,493" onmouseover="UpdateTooltip(this,41,184,event)" onfocus="UpdateTooltip(this,41,184,event)" onclick="return OnShapeClick(41,184,event);" onkeyup="OnShapeKey(41,184,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/seguridad-ocupacional" target="_top" COORDS="952,227,950,227,950,226,950,225,949,225,945,225,944,224,943,224,942,223,939,223,938,224,938,224,938,234,938,234,938,234,938,234,949,234,950,234,952,228,952,227,952,227" onmouseover="UpdateTooltip(this,41,183,event)" onfocus="UpdateTooltip(this,41,183,event)" onclick="return OnShapeClick(41,183,event);" onkeyup="OnShapeKey(41,183,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/seguridad-ocupacional" target="_top" COORDS="939,224,942,224,943,225,943,225,944,226,945,226,949,226,949,227,942,227,940,228,939,232,939,224,939,224,939,224" onmouseover="UpdateTooltip(this,41,183,event)" onfocus="UpdateTooltip(this,41,183,event)" onclick="return OnShapeClick(41,183,event);" onkeyup="OnShapeKey(41,183,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/seguridad-ocupacional" target="_top" COORDS="949,233,949,234,939,234,941,228,942,228,951,228,949,233" onmouseover="UpdateTooltip(this,41,183,event)" onfocus="UpdateTooltip(this,41,183,event)" onclick="return OnShapeClick(41,183,event);" onkeyup="OnShapeKey(41,183,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/vigilancia-de-la-salud-ocupacional" target="_top" COORDS="953,164,951,164,951,163,951,162,950,162,947,162,945,161,945,161,943,160,940,160,940,160,939,161,939,171,939,171,939,171,940,171,950,171,951,170,954,165,954,164,953,164" onmouseover="UpdateTooltip(this,41,182,event)" onfocus="UpdateTooltip(this,41,182,event)" onclick="return OnShapeClick(41,182,event);" onkeyup="OnShapeKey(41,182,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/vigilancia-de-la-salud-ocupacional" target="_top" COORDS="940,161,943,161,944,161,944,162,945,163,947,163,950,163,950,164,943,164,942,165,940,168,940,161,940,161,940,161" onmouseover="UpdateTooltip(this,41,182,event)" onfocus="UpdateTooltip(this,41,182,event)" onclick="return OnShapeClick(41,182,event);" onkeyup="OnShapeKey(41,182,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/vigilancia-de-la-salud-ocupacional" target="_top" COORDS="951,170,950,170,940,170,943,165,943,165,953,165,951,170" onmouseover="UpdateTooltip(this,41,182,event)" onfocus="UpdateTooltip(this,41,182,event)" onclick="return OnShapeClick(41,182,event);" onkeyup="OnShapeKey(41,182,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-asistencia" target="_top" COORDS="760,283,758,283,758,282,757,281,757,281,753,281,751,280,751,280,750,279,747,279,746,280,746,280,746,290,746,290,746,290,746,290,756,290,758,290,760,284,760,283,760,283" onmouseover="UpdateTooltip(this,41,181,event)" onfocus="UpdateTooltip(this,41,181,event)" onclick="return OnShapeClick(41,181,event);" onkeyup="OnShapeKey(41,181,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-asistencia" target="_top" COORDS="747,280,750,280,750,281,751,281,752,282,753,282,757,282,757,283,749,283,748,284,747,288,747,280,747,280,747,280" onmouseover="UpdateTooltip(this,41,181,event)" onfocus="UpdateTooltip(this,41,181,event)" onclick="return OnShapeClick(41,181,event);" onkeyup="OnShapeKey(41,181,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-asistencia" target="_top" COORDS="757,289,756,290,747,290,749,284,749,284,759,284,757,289" onmouseover="UpdateTooltip(this,41,181,event)" onfocus="UpdateTooltip(this,41,181,event)" onclick="return OnShapeClick(41,181,event);" onkeyup="OnShapeKey(41,181,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-remuneraciones-y-beneficios-sociales" target="_top" COORDS="760,226,758,226,758,225,757,224,757,224,753,224,751,223,751,223,750,222,747,222,746,222,746,223,746,232,746,232,746,233,746,233,756,233,758,232,760,227,760,226,760,226" onmouseover="UpdateTooltip(this,41,180,event)" onfocus="UpdateTooltip(this,41,180,event)" onclick="return OnShapeClick(41,180,event);" onkeyup="OnShapeKey(41,180,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-remuneraciones-y-beneficios-sociales" target="_top" COORDS="747,223,750,223,750,223,751,224,752,224,753,225,757,225,757,226,749,226,748,227,747,230,747,223,747,223,747,223" onmouseover="UpdateTooltip(this,41,180,event)" onfocus="UpdateTooltip(this,41,180,event)" onclick="return OnShapeClick(41,180,event);" onkeyup="OnShapeKey(41,180,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-remuneraciones-y-beneficios-sociales" target="_top" COORDS="757,232,756,232,747,232,749,227,749,227,759,227,757,232" onmouseover="UpdateTooltip(this,41,180,event)" onfocus="UpdateTooltip(this,41,180,event)" onclick="return OnShapeClick(41,180,event);" onkeyup="OnShapeKey(41,180,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/capacitacion-de-personal" target="_top" COORDS="389,227,387,227,387,226,386,225,386,225,382,225,380,224,380,224,379,223,376,223,375,224,375,224,375,234,375,234,375,234,375,234,385,234,387,234,389,228,389,227,389,227" onmouseover="UpdateTooltip(this,41,175,event)" onfocus="UpdateTooltip(this,41,175,event)" onclick="return OnShapeClick(41,175,event);" onkeyup="OnShapeKey(41,175,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/capacitacion-de-personal" target="_top" COORDS="376,224,379,224,379,225,380,225,381,226,382,226,386,226,386,227,378,227,377,228,376,232,376,224,376,224,376,224" onmouseover="UpdateTooltip(this,41,175,event)" onfocus="UpdateTooltip(this,41,175,event)" onclick="return OnShapeClick(41,175,event);" onkeyup="OnShapeKey(41,175,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/capacitacion-de-personal" target="_top" COORDS="386,233,385,234,376,234,378,228,378,228,388,228,386,233" onmouseover="UpdateTooltip(this,41,175,event)" onfocus="UpdateTooltip(this,41,175,event)" onclick="return OnShapeClick(41,175,event);" onkeyup="OnShapeKey(41,175,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/reclutamiento-y-seleccion" target="_top" COORDS="389,165,387,165,387,164,386,164,386,163,382,163,380,163,380,162,379,161,376,161,375,162,375,162,375,172,375,172,375,172,375,173,385,173,387,172,389,166,389,165,389,165" onmouseover="UpdateTooltip(this,41,174,event)" onfocus="UpdateTooltip(this,41,174,event)" onclick="return OnShapeClick(41,174,event);" onkeyup="OnShapeKey(41,174,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/reclutamiento-y-seleccion" target="_top" COORDS="376,162,379,162,379,163,380,163,381,164,382,164,386,164,386,165,378,165,377,166,376,170,376,162,376,162,376,162" onmouseover="UpdateTooltip(this,41,174,event)" onfocus="UpdateTooltip(this,41,174,event)" onclick="return OnShapeClick(41,174,event);" onkeyup="OnShapeKey(41,174,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/reclutamiento-y-seleccion" target="_top" COORDS="386,171,385,172,376,172,378,166,378,166,388,166,386,171" onmouseover="UpdateTooltip(this,41,174,event)" onfocus="UpdateTooltip(this,41,174,event)" onclick="return OnShapeClick(41,174,event);" onkeyup="OnShapeKey(41,174,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Seguridad Ocupacional" origTitle="Seguridad Ocupacional" TITLE="Seguridad Ocupacional" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/seguridad-ocupacional" target="_top" COORDS="774,236,957,236,957,181,774,181,774,236" onmouseover="UpdateTooltip(this,41,173,event)" onfocus="UpdateTooltip(this,41,173,event)" onclick="return OnShapeClick(41,173,event);" onkeyup="OnShapeKey(41,173,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Vigilancia de la Salud Ocupacional" origTitle="Vigilancia de la Salud Ocupacional" TITLE="Vigilancia de la Salud Ocupacional" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/vigilancia-de-la-salud-ocupacional" target="_top" COORDS="774,176,957,176,957,121,774,121,774,176" onmouseover="UpdateTooltip(this,41,172,event)" onfocus="UpdateTooltip(this,41,172,event)" onclick="return OnShapeClick(41,172,event);" onkeyup="OnShapeKey(41,172,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración de Remuneraciones y Beneficios Sociales" origTitle="Administración de Remuneraciones y Beneficios Sociales" TITLE="Administración de Remuneraciones y Beneficios Sociales" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-remuneraciones-y-beneficios-sociales" target="_top" COORDS="584,236,767,236,767,181,584,181,584,236" onmouseover="UpdateTooltip(this,41,169,event)" onfocus="UpdateTooltip(this,41,169,event)" onclick="return OnShapeClick(41,169,event);" onkeyup="OnShapeKey(41,169,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Control de Asistencia" origTitle="Control de Asistencia" TITLE="Control de Asistencia" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/control-de-asistencia" target="_top" COORDS="584,298,767,298,767,243,584,243,584,298" onmouseover="UpdateTooltip(this,41,165,event)" onfocus="UpdateTooltip(this,41,165,event)" onclick="return OnShapeClick(41,165,event);" onkeyup="OnShapeKey(41,165,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Capacitación de Personal" origTitle="Capacitación de Personal" TITLE="Capacitación de Personal" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/capacitacion-de-personal" target="_top" COORDS="209,236,392,236,392,181,209,181,209,236" onmouseover="UpdateTooltip(this,41,139,event)" onfocus="UpdateTooltip(this,41,139,event)" onclick="return OnShapeClick(41,139,event);" onkeyup="OnShapeKey(41,139,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Reclutamiento y Selección" origTitle="Reclutamiento y Selección" TITLE="Reclutamiento y Selección" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/reclutamiento-y-seleccion" target="_top" COORDS="209,176,392,176,392,121,209,121,209,176" onmouseover="UpdateTooltip(this,41,133,event)" onfocus="UpdateTooltip(this,41,133,event)" onclick="return OnShapeClick(41,133,event);" onkeyup="OnShapeKey(41,133,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración de Estructura y Desarrollo Organizacional" origTitle="Administración de Estructura y Desarrollo Organizacional" TITLE="Administración de Estructura y Desarrollo Organizacional" HREF="png_9.htm" target="frmDrawing" COORDS="16,176,199,176,199,121,16,121,16,176" onmouseover="UpdateTooltip(this,41,132,event)" onfocus="UpdateTooltip(this,41,132,event)" onclick="return OnShapeClick(41,132,event);" onkeyup="OnShapeKey(41,132,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

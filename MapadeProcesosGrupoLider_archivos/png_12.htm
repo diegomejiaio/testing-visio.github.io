@@ -1,0 +1,188 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+MapadeProcesosGrupoLider
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 73;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.362400;
+	viewMgr.visBBoxRight = 11.275381;
+	viewMgr.visBBoxBottom = 1.536728;
+	viewMgr.visBBoxTop = 7.873821;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="http://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_12.png" ALT="3.Logística" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-almacenes" target="_top" COORDS="682,164,680,164,680,163,680,163,679,162,675,162,674,162,674,161,672,161,669,161,668,161,668,162,668,171,668,171,668,172,669,172,679,172,680,171,683,165,683,165,682,164" onmouseover="UpdateTooltip(this,73,161,event)" onfocus="UpdateTooltip(this,73,161,event)" onclick="return OnShapeClick(73,161,event);" onkeyup="OnShapeKey(73,161,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-almacenes" target="_top" COORDS="669,162,672,162,673,162,673,162,674,163,675,163,679,163,679,164,672,164,670,165,669,169,669,162,669,162,669,162" onmouseover="UpdateTooltip(this,73,161,event)" onfocus="UpdateTooltip(this,73,161,event)" onclick="return OnShapeClick(73,161,event);" onkeyup="OnShapeKey(73,161,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-almacenes" target="_top" COORDS="679,171,679,171,669,171,671,166,672,165,682,165,679,171" onmouseover="UpdateTooltip(this,73,161,event)" onfocus="UpdateTooltip(this,73,161,event)" onclick="return OnShapeClick(73,161,event);" onkeyup="OnShapeKey(73,161,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-centros-logisticos" target="_top" COORDS="296,224,294,224,294,223,294,222,293,222,289,222,288,221,288,221,286,220,283,220,282,220,282,221,282,230,282,230,282,231,283,231,293,231,294,230,297,225,297,224,296,224" onmouseover="UpdateTooltip(this,73,162,event)" onfocus="UpdateTooltip(this,73,162,event)" onclick="return OnShapeClick(73,162,event);" onkeyup="OnShapeKey(73,162,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-centros-logisticos" target="_top" COORDS="283,221,286,221,287,221,287,222,288,222,289,223,293,223,293,224,286,224,285,225,283,228,283,221,283,221,283,221" onmouseover="UpdateTooltip(this,73,162,event)" onfocus="UpdateTooltip(this,73,162,event)" onclick="return OnShapeClick(73,162,event);" onkeyup="OnShapeKey(73,162,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-centros-logisticos" target="_top" COORDS="293,230,293,230,283,230,285,225,286,225,296,225,293,230" onmouseover="UpdateTooltip(this,73,162,event)" onfocus="UpdateTooltip(this,73,162,event)" onclick="return OnShapeClick(73,162,event);" onkeyup="OnShapeKey(73,162,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-obsequios" target="_top" COORDS="489,290,487,290,487,289,486,288,486,288,482,288,481,287,480,287,479,286,476,286,475,286,475,287,475,296,475,296,475,297,475,297,486,297,487,296,489,291,489,290,489,290" onmouseover="UpdateTooltip(this,73,159,event)" onfocus="UpdateTooltip(this,73,159,event)" onclick="return OnShapeClick(73,159,event);" onkeyup="OnShapeKey(73,159,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-obsequios" target="_top" COORDS="476,287,479,287,480,287,480,288,481,288,482,289,486,289,486,290,478,290,477,291,476,294,476,287,476,287,476,287" onmouseover="UpdateTooltip(this,73,159,event)" onfocus="UpdateTooltip(this,73,159,event)" onclick="return OnShapeClick(73,159,event);" onkeyup="OnShapeKey(73,159,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-obsequios" target="_top" COORDS="486,296,486,296,476,296,478,291,478,291,488,291,486,296" onmouseover="UpdateTooltip(this,73,159,event)" onfocus="UpdateTooltip(this,73,159,event)" onclick="return OnShapeClick(73,159,event);" onkeyup="OnShapeKey(73,159,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/evaluacion-de-proveedores" target="_top" COORDS="490,348,488,348,488,347,487,346,487,346,483,346,481,345,481,345,480,344,477,344,476,345,476,345,476,355,476,355,476,355,476,355,487,355,488,354,490,349,490,348,490,348" onmouseover="UpdateTooltip(this,73,158,event)" onfocus="UpdateTooltip(this,73,158,event)" onclick="return OnShapeClick(73,158,event);" onkeyup="OnShapeKey(73,158,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/evaluacion-de-proveedores" target="_top" COORDS="477,345,480,345,480,346,481,346,482,347,483,347,487,347,487,348,479,348,478,349,477,353,477,345,477,345,477,345" onmouseover="UpdateTooltip(this,73,158,event)" onfocus="UpdateTooltip(this,73,158,event)" onclick="return OnShapeClick(73,158,event);" onkeyup="OnShapeKey(73,158,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/evaluacion-de-proveedores" target="_top" COORDS="487,354,487,354,477,354,479,349,479,349,489,349,487,354" onmouseover="UpdateTooltip(this,73,158,event)" onfocus="UpdateTooltip(this,73,158,event)" onclick="return OnShapeClick(73,158,event);" onkeyup="OnShapeKey(73,158,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-bienes" target="_top" COORDS="487,230,485,230,485,229,485,228,484,228,480,228,479,227,479,227,477,226,474,226,473,227,473,227,473,237,473,237,473,237,474,237,484,237,485,237,488,231,488,230,487,230" onmouseover="UpdateTooltip(this,73,156,event)" onfocus="UpdateTooltip(this,73,156,event)" onclick="return OnShapeClick(73,156,event);" onkeyup="OnShapeKey(73,156,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-bienes" target="_top" COORDS="474,227,477,227,478,228,478,228,479,229,480,229,484,229,484,230,477,230,476,231,474,235,474,227,474,227,474,227" onmouseover="UpdateTooltip(this,73,156,event)" onfocus="UpdateTooltip(this,73,156,event)" onclick="return OnShapeClick(73,156,event);" onkeyup="OnShapeKey(73,156,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-bienes" target="_top" COORDS="484,236,484,237,474,237,477,231,477,231,487,231,484,236" onmouseover="UpdateTooltip(this,73,156,event)" onfocus="UpdateTooltip(this,73,156,event)" onclick="return OnShapeClick(73,156,event);" onkeyup="OnShapeKey(73,156,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-servicios" target="_top" COORDS="487,164,485,164,485,163,485,163,484,162,480,162,479,162,479,161,477,161,474,161,473,161,473,162,473,171,473,171,473,172,474,172,484,172,485,171,488,165,488,165,487,164" onmouseover="UpdateTooltip(this,73,154,event)" onfocus="UpdateTooltip(this,73,154,event)" onclick="return OnShapeClick(73,154,event);" onkeyup="OnShapeKey(73,154,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-servicios" target="_top" COORDS="474,162,477,162,478,162,478,162,479,163,480,163,484,163,484,164,477,164,475,165,474,169,474,162,474,162,474,162" onmouseover="UpdateTooltip(this,73,154,event)" onfocus="UpdateTooltip(this,73,154,event)" onclick="return OnShapeClick(73,154,event);" onkeyup="OnShapeKey(73,154,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-servicios" target="_top" COORDS="484,171,484,171,474,171,476,166,477,165,487,165,484,171" onmouseover="UpdateTooltip(this,73,154,event)" onfocus="UpdateTooltip(this,73,154,event)" onclick="return OnShapeClick(73,154,event);" onkeyup="OnShapeKey(73,154,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/creacion-de-bienes-y-servicios" target="_top" COORDS="297,163,295,163,295,162,294,162,294,161,290,161,289,161,288,160,287,160,284,160,283,160,283,161,283,170,283,170,283,171,283,171,294,171,295,170,297,164,297,164,297,163" onmouseover="UpdateTooltip(this,73,153,event)" onfocus="UpdateTooltip(this,73,153,event)" onclick="return OnShapeClick(73,153,event);" onkeyup="OnShapeKey(73,153,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/creacion-de-bienes-y-servicios" target="_top" COORDS="284,161,287,161,288,161,288,161,289,162,290,162,294,162,294,163,286,163,285,164,284,168,284,161,284,161,284,161" onmouseover="UpdateTooltip(this,73,153,event)" onfocus="UpdateTooltip(this,73,153,event)" onclick="return OnShapeClick(73,153,event);" onkeyup="OnShapeKey(73,153,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/creacion-de-bienes-y-servicios" target="_top" COORDS="294,170,294,170,284,170,286,165,286,164,296,164,294,170" onmouseover="UpdateTooltip(this,73,153,event)" onfocus="UpdateTooltip(this,73,153,event)" onclick="return OnShapeClick(73,153,event);" onkeyup="OnShapeKey(73,153,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="png_1.htm" target="frmDrawing" COORDS="988,560,1003,574,1003,567,1019,567,1019,552,1003,552,1003,545,988,560" onmouseover="UpdateTooltip(this,73,143,event)" onfocus="UpdateTooltip(this,73,143,event)" onclick="return OnShapeClick(73,143,event);" onkeyup="OnShapeKey(73,143,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración de Centros Logísticos" origTitle="Administración de Centros Logísticos" TITLE="Administración de Centros Logísticos" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-centros-logisticos" target="_top" COORDS="118,239,303,239,303,184,118,184,118,239" onmouseover="UpdateTooltip(this,73,142,event)" onfocus="UpdateTooltip(this,73,142,event)" onclick="return OnShapeClick(73,142,event);" onkeyup="OnShapeKey(73,142,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Evaluación de Proveedores" origTitle="Evaluación de Proveedores" TITLE="Evaluación de Proveedores" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/evaluacion-de-proveedores" target="_top" COORDS="309,361,494,361,494,305,309,305,309,361" onmouseover="UpdateTooltip(this,73,141,event)" onfocus="UpdateTooltip(this,73,141,event)" onclick="return OnShapeClick(73,141,event);" onkeyup="OnShapeKey(73,141,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Compra de Servicios" origTitle="Compra de Servicios" TITLE="Compra de Servicios" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-servicios" target="_top" COORDS="308,175,493,175,493,120,308,120,308,175" onmouseover="UpdateTooltip(this,73,139,event)" onfocus="UpdateTooltip(this,73,139,event)" onclick="return OnShapeClick(73,139,event);" onkeyup="OnShapeKey(73,139,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Compra de Obsequios" origTitle="Compra de Obsequios" TITLE="Compra de Obsequios" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-obsequios" target="_top" COORDS="310,301,495,301,495,246,310,246,310,301" onmouseover="UpdateTooltip(this,73,138,event)" onfocus="UpdateTooltip(this,73,138,event)" onclick="return OnShapeClick(73,138,event);" onkeyup="OnShapeKey(73,138,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Compra de Bienes" origTitle="Compra de Bienes" TITLE="Compra de Bienes" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/compra-de-bienes" target="_top" COORDS="310,240,495,240,495,185,310,185,310,240" onmouseover="UpdateTooltip(this,73,136,event)" onfocus="UpdateTooltip(this,73,136,event)" onclick="return OnShapeClick(73,136,event);" onkeyup="OnShapeKey(73,136,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Creación de Bienes y Servicios" origTitle="Creación de Bienes y Servicios" TITLE="Creación de Bienes y Servicios" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/creacion-de-bienes-y-servicios" target="_top" COORDS="118,175,303,175,303,120,118,120,118,175" onmouseover="UpdateTooltip(this,73,123,event)" onfocus="UpdateTooltip(this,73,123,event)" onclick="return OnShapeClick(73,123,event);" onkeyup="OnShapeKey(73,123,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración de Almacenes" origTitle="Administración de Almacenes" TITLE="Administración de Almacenes" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-de-almacenes" target="_top" COORDS="500,175,685,175,685,120,500,120,500,175" onmouseover="UpdateTooltip(this,73,122,event)" onfocus="UpdateTooltip(this,73,122,event)" onclick="return OnShapeClick(73,122,event);" onkeyup="OnShapeKey(73,122,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

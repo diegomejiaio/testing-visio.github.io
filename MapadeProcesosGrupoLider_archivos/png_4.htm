@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+MapadeProcesosGrupoLider
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 57;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.433896;
+	viewMgr.visBBoxRight = 11.240024;
+	viewMgr.visBBoxBottom = 4.312923;
+	viewMgr.visBBoxTop = 7.822096;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="http://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_4.png" ALT="2.Evaluación y Control del Proyecto" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-y-reporte-del-flujo-de-caja-del-proyecto" target="_top" COORDS="604,133,602,133,602,132,601,132,601,131,597,131,595,130,595,130,594,129,590,129,590,130,589,130,589,140,589,140,590,140,590,141,600,141,602,140,604,134,604,133,604,133" onmouseover="UpdateTooltip(this,57,249,event)" onfocus="UpdateTooltip(this,57,249,event)" onclick="return OnShapeClick(57,249,event);" onkeyup="OnShapeKey(57,249,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-y-reporte-del-flujo-de-caja-del-proyecto" target="_top" COORDS="590,130,594,130,594,131,595,131,596,132,597,132,601,132,601,133,593,133,592,134,590,138,590,130,590,130,590,130" onmouseover="UpdateTooltip(this,57,249,event)" onfocus="UpdateTooltip(this,57,249,event)" onclick="return OnShapeClick(57,249,event);" onkeyup="OnShapeKey(57,249,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-y-reporte-del-flujo-de-caja-del-proyecto" target="_top" COORDS="601,139,600,140,590,140,593,134,593,134,603,134,601,139" onmouseover="UpdateTooltip(this,57,249,event)" onfocus="UpdateTooltip(this,57,249,event)" onclick="return OnShapeClick(57,249,event);" onkeyup="OnShapeKey(57,249,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-contable-financiera-de-un-proyecto" target="_top" COORDS="604,85,602,85,602,84,601,83,601,83,597,83,595,82,595,82,594,81,590,81,590,81,589,82,589,91,589,91,590,92,590,92,600,92,602,91,604,86,604,85,604,85" onmouseover="UpdateTooltip(this,57,245,event)" onfocus="UpdateTooltip(this,57,245,event)" onclick="return OnShapeClick(57,245,event);" onkeyup="OnShapeKey(57,245,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-contable-financiera-de-un-proyecto" target="_top" COORDS="590,82,594,82,594,82,595,83,596,83,597,84,601,84,601,85,593,85,592,86,590,89,590,82,590,82,590,82" onmouseover="UpdateTooltip(this,57,245,event)" onfocus="UpdateTooltip(this,57,245,event)" onclick="return OnShapeClick(57,245,event);" onkeyup="OnShapeKey(57,245,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-contable-financiera-de-un-proyecto" target="_top" COORDS="601,91,600,91,590,91,593,86,593,86,603,86,601,91" onmouseover="UpdateTooltip(this,57,245,event)" onfocus="UpdateTooltip(this,57,245,event)" onclick="return OnShapeClick(57,245,event);" onkeyup="OnShapeKey(57,245,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración Contable Financiera de un proyecto" origTitle="Administración Contable Financiera de un proyecto" TITLE="Administración Contable Financiera de un proyecto" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-contable-financiera-de-un-proyecto" target="_top" COORDS="421,96,608,96,608,51,421,51,421,96" onmouseover="UpdateTooltip(this,57,244,event)" onfocus="UpdateTooltip(this,57,244,event)" onclick="return OnShapeClick(57,244,event);" onkeyup="OnShapeKey(57,244,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="png_1.htm" target="frmDrawing" COORDS="987,300,1002,315,1002,308,1019,308,1019,293,1002,293,1002,285,987,300" onmouseover="UpdateTooltip(this,57,167,event)" onfocus="UpdateTooltip(this,57,167,event)" onclick="return OnShapeClick(57,167,event);" onkeyup="OnShapeKey(57,167,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Control de Cambios y Comunicación" origTitle="Control de Cambios y Comunicación" TITLE="Control de Cambios y Comunicación"  target="_top" COORDS="421,239,608,239,608,195,421,195,421,239" onmouseover="UpdateTooltip(this,57,233,event)" onfocus="UpdateTooltip(this,57,233,event)" onclick="return OnShapeClick(57,233,event);" onkeyup="OnShapeKey(57,233,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Monitoreo y Control de los riesgos del proyecto" origTitle="Monitoreo y Control de los riesgos del proyecto" TITLE="Monitoreo y Control de los riesgos del proyecto"  target="_top" COORDS="421,192,608,192,608,147,421,147,421,192" onmouseover="UpdateTooltip(this,57,232,event)" onfocus="UpdateTooltip(this,57,232,event)" onclick="return OnShapeClick(57,232,event);" onkeyup="OnShapeKey(57,232,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Administración y Reporte del Flujo de Caja del Proyecto" origTitle="Administración y Reporte del Flujo de Caja del Proyecto" TITLE="Administración y Reporte del Flujo de Caja del Proyecto" HREF="https://sites.google.com/a/lider.com.pe/grupolider/areas-internas/organizacion-y-procesos/procesos/administracion-y-reporte-del-flujo-de-caja-del-proyecto" target="_top" COORDS="421,145,608,145,608,100,421,100,421,145" onmouseover="UpdateTooltip(this,57,231,event)" onfocus="UpdateTooltip(this,57,231,event)" onclick="return OnShapeClick(57,231,event);" onkeyup="OnShapeKey(57,231,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
